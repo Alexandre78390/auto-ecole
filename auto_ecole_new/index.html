@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+	<meta charset="utf-8">
+	<title>Auto école Arcisienne</title>
+	<meta name="description" content="Site de l'auto école arcisienne">
+	<meta name="author" content="Alexandre Fert">
+	<link id="defaultSheet" rel="stylesheet" type="text/css" href="css/style.css" title="standard">
+	<link rel="icon" type="image/png" href="images/favicon.ico"/>
+	<!--[if IE]><link rel="shortcut icon" type="image/x-icon" href="favicon.ico" /><![endif]-->
+	<meta name=viewport content="width=device-width, initial-scale=1">
+	<script type="text/javascript" src="swap.js"></script>
+</head>
+<body>
+	<!-- Contenu de toute la page. -->
+	<div id="blocpage">
+
+		<!-- Contenu de la partie supérieure de la page. -->
+		<header>
+			<div class="container">
+				<div class="wrapper">
+					<div class="box__info">
+						<h3 class="adresse">59, Avenue Paul Vaillant Couturier</br>78390 Bois d'Arcy</br>
+						<span class="tel">01 30 57 49 11</span></h3>
+					</div>
+					<div class="box__title">
+						<h1 class="main__title">Auto-école arcisienne</h1>
+					</div>
+					<!-- <div class="box__img">
+						<div class="inbox__accueil">
+							<img src="http://www.autoecole-arcisienne.fr/img/IMG_1089.JPG" onClick="window.open('http://www.autoecole-arcisienne.fr/img/IMG_1089.JPG', '', 'scrollbars=yes,width=auto,height=auto')"></a>
+						</div>					
+					</div> -->
+				</div>
+			</div>
+		</header>
+
+
+		<!-- Contenu de la partie en dessous du header, où les boutons de navigation se trouvent. -->
+		<nav>
+			<div class="container">
+				<lu class="navbar">
+					<li><a class="navbtn">Horaires</a></li>
+					<li><a class="navbtn">Permis</a></li>
+					<li><a class="navbtn">Accueil</a></li>
+					<li><a class="navbtn">Code</a></li>
+					<li><a class="navbtn">Tarif</a></li>
+					<li><a class="navbtn">Contact</a></li>
+				</lu>
+			</div>
+		</nav>
+
+
+		<!-- Contenu de la partie centrale de la page, où les principales informations sont montrées. -->
+		<div class="container section">
+			<!-- <iframe src="http://www.autoecole-arcisienne.fr/pdf/Conduitetraditionnelle.pdf" width="100%" height="500px"></iframe> -->
+			<section>
+				<div class="bloc1">
+					<div class="inbox__citroen">
+						<img src="http://www.autoecole-arcisienne.fr/img/C3avleftBR.png" name="citroen">
+						<span class="tel">07 81 15 43 43</span>
+					</div>				
+				</div>
+				<div class="bloc2">
+					<ul class="dropdown">
+						<li class="dropbtn">
+							<span class="text__info">Info-pratique</span>
+							<span class="arrow"></span>
+						</li>
+						<li class="dropdown__content">
+							<a href="https://www.youtube.com/watch?v=JACh9-P2sII&t=304s&index=1&list=PLVfzA8TuHuNzNtDuWKJC_gH2qTddsE4HV" target="_blank" >Verifications C3 2018 Exterieur</a>
+							<a href="https://www.youtube.com/watch?v=4eZOhknu6W4&list=PLVfzA8TuHuNzNtDuWKJC_gH2qTddsE4HV&index=5" target="_blank">Verifications C3 2018 Interieur</a>
+							<a href="https://www.youtube.com/watch?v=CCuCMh-Mhkk&list=PLVfzA8TuHuNzNtDuWKJC_gH2qTddsE4HV&index=6" target="_blank">Verifications Clio 2018</a>
+							<a href="https://www.youtube.com/watch?v=EZXLKHMjJOY&t=25s&list=PLVfzA8TuHuNzNtDuWKJC_gH2qTddsE4HV&index=3" target="_blank">Questions Premiers Secours</a>
+							<a href="http://www.securite-routiere.gouv.fr/permis-de-conduire/resultats-du-permis-de-conduire" target="_blank">Resultats du permis de conduire</a>
+							<a href="https://www.youtube.com/watch?v=15gDx_lR1gg" target="_blank">Tutoriel pour demander l'édition de son permis après réussite à l'examen</a>
+						</li>
+					</ul>
+						<button onclick="swap()" type="button" id="button">Mode nuit</button>
+					</div>
+						<!-- fin de l'ajout menu déroulant -->
+					<div class="bloc3">
+						<div class="inbox__moto">
+							<img src="http://www.autoecole-arcisienne.fr/img/350cm2@icone.png" name="moto">
+							<span class="tel">07 68 47 58 71</span>
+						</div>
+					</section>
+				</div>
+
+				<!-- Contenu de ce qui se situe en bas de la page avec des informations pratique. -->
+				<footer>
+					<div class="container">
+						<div class="footer">
+							<!-- début de l'ajout menu déroulant-->
+							<div class="info info1">
+								<p>En partenariat avec notre mairie
+									obtenez une aide pour votre permis.<br>
+									Contactez : Service jeunesse
+								Tél : 01 30 07 18 55</p>
+							</div>
+							<div class="info info2">
+								<p>En partenariat avec notre Voisin ADA 
+									<br>Dès l’obtention de votre permis, louez gratuitement une voiture sympa</p>     
+								</div>
+								<div class="info info3">
+									<p>Rejoignez nous sur Facebook</p>
+									<a href="https://www.facebook.com/pages/Auto-Ecole-Arcisienne/472949772758046?fref=ts" target="_blank"><img id="facebook" src="<?php echo $chemin?>img/icone_facebook.png" alt="icone Facebook"></a>
+									<br>
+								</div>
+								<p class="agrement">Agrément E13 078 00010 RCS Versailles 789 158 102</p>
+							</footer>
+						</div>
+					</div>
+				</div>
+			</body>
+			</html>
