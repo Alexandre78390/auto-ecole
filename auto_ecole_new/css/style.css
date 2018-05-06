@@ -1,4 +1,5 @@
 /* Generals */
+
 body {
 	padding: 0;
 	margin: 0;
@@ -8,7 +9,7 @@ body {
 	/* font: 15px/1.5 Arial, Helvetica, sans-serif; */
 	background-color: #DDD;
 	color: white;
-/*	background-image: url("https://images.pexels.com/photos/416974/pexels-photo-416974.jpeg?cs=srgb&dl=adventure-asphalt-clouds-416974.jpg&fm=jpg");
+	/*	background-image: url("https://images.pexels.com/photos/416974/pexels-photo-416974.jpeg?cs=srgb&dl=adventure-asphalt-clouds-416974.jpg&fm=jpg");
 	background-attachment: fixed;
 	background-repeat: no-repeat;
 	background-position: center;
@@ -32,13 +33,16 @@ body {
 }
 
 /* Pour les list en général */
-ul, li {
+
+ul,
+li {
 	margin: 0;
 	padding: 0;
 	list-style-type: none;
 }
 
 /* Style du header */
+
 .wrapper {
 	padding: 0 1em 0 1em;
 	display: grid;
@@ -62,12 +66,14 @@ ul, li {
 	color: #228765;
 }
 
-.adresse{
+.adresse {
 	color: #228765;
 	line-height: 1.5em;
 }
 
-.adresse::selection, .main__title::selection, .tel::selection {
+.adresse::selection,
+.main__title::selection,
+.tel::selection {
 	color: #DDD;
 	background: #228765;
 }
@@ -89,12 +95,13 @@ ul, li {
 }
 
 .inbox__moto img {
-	min-width: 101px; /* pour mettre la photo de la taille du numéro de téléphone */
+	min-width: 101px;
+	/* pour mettre la photo de la taille du numéro de téléphone */
 	height: 100px;
 }
 
-
 /* Style du nav */
+
 .navbar {
 	display: grid;
 	grid-template-columns: repeat(2, 1fr) 2fr repeat(3, .66fr);
@@ -113,8 +120,6 @@ ul, li {
 	background: linear-gradient(90deg, #228765 10%, #36CC7C, #228765 90%);
 }
 
-
-
 li:hover {
 	text-decoration: none;
 	color: white;
@@ -127,14 +132,14 @@ li:hover {
 	height: 40vh;
 }
 
-section{
+section {
 	display: flex;
 	position: relative;
 	margin-bottom: 10px;
 }
 
 .bloc1 {
-	box-shadow: inset 0 2px 15px black,inset 0 0 5px black;
+	box-shadow: inset 0 2px 15px black, inset 0 0 5px black;
 	border-radius: 100px 0 0 100px;
 	border-left: 2px solid #228765;
 	display: inline-block;
@@ -145,7 +150,7 @@ section{
 	transition: transform 1s ease, border-radius 1.5s ease;
 }
 
-.bloc1 > img {
+.bloc1>img {
 	display: none;
 	align-self: center;
 	width: 200px;
@@ -157,14 +162,14 @@ section{
 	border-radius: 10px 0 0 10px;
 }
 
-.bloc1:hover img{
+.bloc1:hover img {
 	display: inline-block;
 }
 
 .bloc2 {
 	z-index: 1;
 	background-color: #485670;
-	box-shadow: inset 0 2px 15px black,inset 0 0 5px black;
+	box-shadow: inset 0 2px 15px black, inset 0 0 5px black;
 	display: block;
 	height: 40vh;
 	width: 20vw;
@@ -177,7 +182,7 @@ section{
 }
 
 .bloc3 {
-	box-shadow: inset 0 2px 15px black,inset 0 0 5px black;
+	box-shadow: inset 0 2px 15px black, inset 0 0 5px black;
 	border-radius: 0 100px 100px 0;
 	border-right: 2px solid #228765;
 	display: inline-block;
@@ -193,21 +198,23 @@ section{
 	border-radius: 0;
 }
 
-.bloc3:hover .bloc1{
+.bloc3:hover .bloc1 {
 	transform: translate(-15px);
 }
 
-.bloc3 > img {
+.bloc3>img {
 	align-self: center;
 	width: 120px;
 	height: 100px;
 }
 
 /* Pour le footer */
-.footer{
+
+.footer {
 	display: grid;
 	grid-template-columns: repeat(3, 1fr);
-	text-align: center; /* ajouté */
+	text-align: center;
+	/* ajouté */
 }
 
 .footer div:nth-child(2n) {
@@ -230,7 +237,9 @@ section{
 }
 
 /* Ajout menu déroulant */
-.footer > li, ul {
+
+.footer>li,
+ul {
 	list-style-type: none;
 	margin: 0;
 	padding: 0;
@@ -248,7 +257,8 @@ section{
 	display: none;
 }
 
-.dropdown:hover, .dropdown:active {
+.dropdown:hover,
+.dropdown:active {
 	margin-bottom: 7px;
 	height: 10em;
 	box-sizing: border-box;
@@ -258,7 +268,7 @@ section{
 	padding: 5px;
 	border-radius: 10px 10px 10px 10px;
 	min-height: 30px;
-	box-shadow: inset 0 2px 15px black,inset 0 0 5px black;
+	box-shadow: inset 0 2px 15px black, inset 0 0 5px black;
 	cursor: default;
 	position: relative;
 	text-align: center;
@@ -288,7 +298,7 @@ section{
 .dropdown:hover {
 	border-bottom: 2px solid #228765;
 	border-radius: 10px 10px 10px 10px;
-	box-shadow: inset 0 2px 15px black,inset 0 0 5px black;
+	box-shadow: inset 0 2px 15px black, inset 0 0 5px black;
 }
 
 .dropdown:hover .dropdown__content {
@@ -307,22 +317,21 @@ section{
 }
 
 /* Animation flèche */
+
 @keyframes rebond {
 	0% {
 		transform: translate(0, -3px);
 	}
-
 	50% {
-		transform: translate(0,0);
+		transform: translate(0, 0);
 	}
-
 	100% {
 		transform: translate(0, -3px);
 	}
 }
 
 .dropdown:hover .arrow {
-	border: 0 solid ;
+	border: 0 solid;
 }
 
 .dropdown__content {
@@ -330,7 +339,8 @@ section{
 	z-index: 10;
 }
 
-.dropdown:hover .dropdown__content, .dropdown:active .dropdown__content {
+.dropdown:hover .dropdown__content,
+.dropdown:active .dropdown__content {
 	display: block;
 }
 
@@ -344,52 +354,44 @@ section{
 	text-align: center;
 	word-wrap: break-word;
 }
+
 /* Fin d'ajout menu déroulant */
 
 /* Media queries */
-@media (max-width: 960px) {
 
+@media (max-width: 960px) {
 	/* Style du header */
 	.wrapper {
 		grid-template-areas: "title" "info";
 	}
-
 	.inbox__accueil {
 		display: none;
 	}
-
 	.footer {
 		display: inline-block;
 	}
-
 	/* Style de la navbar */
-	.dropdown{
+	.dropdown {
 		width: 70%;
 	}
 }
 
 @media (max-width: 700px) {
-
 	/* Style de la navbar */
 	.navbar {
 		grid-template-columns: 1fr;
 		grid-template-rows: repeat(6, 1fr);
 	}
-
 	.navbar li {
 		box-shadow: inset 0 0 10px black;
 	}
-
 	.dropbtn {
 		box-shadow: inset 0 0 10px black;
-
 	}
-
 	/* Footer */
 	.footer {
 		display: inline-block;
 	}
-
 	.text__info {
 		padding: 0;
 	}
